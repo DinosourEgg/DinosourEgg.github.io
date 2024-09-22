@@ -1,0 +1,181 @@
+@charset "utf-8";
+
+
+.clearfix:after,
+body,
+div,
+h1,
+html,
+p {
+	margin: 0;
+	padding: 0
+}
+
+body,
+html {
+	height: 100%
+}
+
+body {
+	font-family: 'PingFang SC', "pzh", 'Lantinghei SC', 'Helvetica Neue', Helvetica, Arial, 'Microsoft YaHei', '΢���ź�', STHeitiSC-Light, simsun, '����', 'WenQuanYi Zen Hei', 'WenQuanYi Micro Hei', sans-serif
+}
+
+.clearfix {
+	display: block
+}
+
+.clearfix:after {
+	content: '';
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+	font-size: 0;
+	display: block;
+	clear: both
+}
+
+.left {
+	float: left
+}
+
+
+@font-face {
+	font-family: "pzh";
+	src: url('./text/pzh.woff2') format('woff2'),
+		url('./text/pzh.woff') format('woff'),
+		url('./pzh.ttf') format('truetype');
+}
+
+
+.left {
+	float: left;
+}
+
+.hide {
+	display: none;
+}
+
+.header,
+.main {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 185px;
+	position: relative;
+	text-align: center;
+	border-bottom: 3px solid #d9d9d9;
+}
+
+.header .header-time {
+	width: 105px;
+	text-align: center;
+}
+
+.header .header-time span {
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.header .header-time .year {
+	height: 20px;
+	display: block;
+}
+
+.header .header-time .year em {
+	font-size: 18px;
+	background: #fff;
+	font-style: normal;
+	padding: 0 2px;
+}
+
+.header .header-time .day {
+	height: 40px;
+	font-size: 34px;
+	margin: 10px 0;
+}
+
+.header .header-time .time {
+	font-size: 18px;
+	height: 20px;
+}
+
+.header .header-cont {
+	margin-top: 10px;
+}
+
+.header h1 {
+	text-align: center;
+	height: 80px;
+	padding: 0 20px;
+	line-height: 1.4em;
+	margin-bottom: 15px;
+	font-size: 36px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header h1 .title {
+	max-width: 95%;
+	margin-top: 5rem;
+}
+
+
+
+.main .main-left {
+	width: 1200px;
+}
+
+.main #detail {
+	font-size: 18px;
+	line-height: 2em;
+	padding-top: 20px;
+}
+
+.main #detail p {
+	margin-bottom: 20px;
+}
+
+/*ie10����*/
+
+#articleEdit {
+	margin: 0 10px 0 0;
+	text-align: right;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+
+	.domPC {
+		display: none;
+	}
+
+	.main {
+		width: 100%;
+		box-sizing: border-box;
+		padding: 0 10px;
+		font-size: 16px;
+		overflow: hidden;
+	}
+
+	.main .main-left {
+		width: 100%;
+	}
+
+	.main #detail {
+		font-size: 18px;
+	}
+
+	#articleEdit {
+		padding: 10px 0 10px;
+		margin: 0 10px 0 10px;
+		text-align: right;
+		font-size: 12px;
+	}
+
+}
